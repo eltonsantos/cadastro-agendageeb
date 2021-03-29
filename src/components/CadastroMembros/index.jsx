@@ -40,7 +40,6 @@ const CadastroMembros = () => {
   //   getLista();
   // }, []);
 
-
   const cadastrarMembro = async (e) => {
     e.preventDefault();
 
@@ -86,7 +85,6 @@ const CadastroMembros = () => {
     setComplemento('');
 
   }
-
 
   return (
     <div>
