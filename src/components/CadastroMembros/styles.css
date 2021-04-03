@@ -1,0 +1,14 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  justify-content: center;
+}
+
+.flexivel {
+  display: flex;
+}
+
+.horizontal {
+  flex-direction: row;
+}

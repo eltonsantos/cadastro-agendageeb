@@ -6,7 +6,7 @@ import CadastroMembros from "./components/CadastroMembros";
 const App = () => {
   return (
     <>
-      <h1>AgendaGEEB</h1>
+      <h1 className="container">AgendaGEEB</h1>
 
       <ListaMembros />
       <CadastroMembros />
