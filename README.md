@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="#-technologies-&-dependences">Technologies & dependences</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies-and-dependences">Technologies and dependences</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -19,7 +19,7 @@
 
 ---
 
-## 🧪 Technologies & dependences
+## 🧪 Technologies and dependences
 
 This project was developed using the following technologies and dependences:
 
