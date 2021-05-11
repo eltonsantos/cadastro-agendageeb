@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Agenda GEEB" src=".github/logo.png" width="500px">
+  <img alt="Agenda GEEB" src=".github/logo.png" width="160px">
 </p>
 
 <p align="center">
