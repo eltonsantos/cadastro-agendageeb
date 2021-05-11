@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { store } from '../../firebaseconf';
+import useCep from 'react-hook-usecep';
+import ReactInputDateMask from 'react-input-date-mask';
+
 import './styles.css';
 
-const CadastroMembros = () => {
+const CadastroMembros = (props) => {
+
+  const [status, setCep] = useCep();
+  const { data } = status;
 
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
-  const [cep, setCep] = useState('');
-  const [endereco, setEndereco] = useState('');
-  const [bairro, setBairro] = useState('');
-  const [cidade, setCidade] = useState('');
-  const [estado, setEstado] = useState('');
   const [telefone, setTelefone] = useState('');
   const [dtnascimento, setDtnascimento] = useState('');
   const [facebook, setFacebook] = useState('');
@@ -47,11 +48,11 @@ const CadastroMembros = () => {
     const membro = {
       nome,
       email,
-      cep,
-      endereco,
-      bairro,
-      cidade,
-      estado,
+      cep: data.cep,
+      endereco: data.logradouro,
+      bairro: data.bairro,
+      cidade: data.localidade,
+      estado: data.uf,
       telefone,
       dtnascimento,
       facebook,
@@ -75,10 +76,6 @@ const CadastroMembros = () => {
     setNome('');
     setEmail('');
     setCep('');
-    setEndereco('');
-    setBairro('');
-    setCidade('');
-    setEstado('');
     setTelefone('');
     setDtnascimento('');
     setFacebook('');
@@ -94,11 +91,11 @@ const CadastroMembros = () => {
     const membroAtualizado = {
       nome,
       email,
-      cep,
-      endereco,
-      bairro,
-      cidade,
-      estado,
+      cep: data.cep,
+      endereco: data.logradouro,
+      bairro: data.bairro,
+      cidade: data.localidade,
+      estado: data.uf,
       telefone,
       dtnascimento,
       facebook,
@@ -120,10 +117,6 @@ const CadastroMembros = () => {
     setNome('');
     setEmail('');
     setCep('');
-    setEndereco('');
-    setBairro('');
-    setCidade('');
-    setEstado('');
     setTelefone('');
     setDtnascimento('');
     setFacebook('');
@@ -138,14 +131,10 @@ const CadastroMembros = () => {
   const setUpdate = async (id) => {
     try {
       const data = await store.collection('membros').doc(id).get();
-      const { nome, email, cep, endereco, bairro, cidade, estado, telefone, dtnascimento, facebook, instagram, linkedin, complemento } = data.data();
+      const { nome, email, cep, telefone, dtnascimento, facebook, instagram, linkedin, complemento } = data.data();
       setNome(nome);
       setEmail(email);
       setCep(cep);
-      setEndereco(endereco);
-      setBairro(bairro);
-      setCidade(cidade);
-      setEstado(estado);
       setTelefone(telefone);
       setDtnascimento(dtnascimento);
       setFacebook(facebook);
@@ -207,18 +196,16 @@ const CadastroMembros = () => {
               type="text"
               name="cep"
               className="form-control"
-              value={cep}
-              onChange={(e) => { setCep(e.target.value) }}
+              onBlur={(e) => { setCep(e.target.value) }}
             />
           </div>
           <div className="col">
             <label htmlFor="endereco">Endereço</label>
             <input
               type="text"
-              name="rua"
+              name="endereco"
               className="form-control"
-              value={endereco}
-              onChange={(e) => { setEndereco(e.target.value) }}
+              value={data.logradouro}
             />
           </div>
           <div className="col">
@@ -227,8 +214,7 @@ const CadastroMembros = () => {
               type="text"
               name="bairro"
               className="form-control"
-              value={bairro}
-              onChange={(e) => { setBairro(e.target.value) }}
+              value={data.bairro}
             />
           </div>
         </div>
@@ -240,8 +226,7 @@ const CadastroMembros = () => {
               type="text"
               name="cidade"
               className="form-control"
-              value={cidade}
-              onChange={(e) => { setCidade(e.target.value) }}
+              value={data.localidade}
             />
           </div>
           <div className="col">
@@ -250,8 +235,7 @@ const CadastroMembros = () => {
               type="text"
               name="estado"
               className="form-control"
-              value={estado}
-              onChange={(e) => { setEstado(e.target.value) }}
+              value={data.uf}
             />
           </div>
           <div className="col">
@@ -269,11 +253,12 @@ const CadastroMembros = () => {
         <div className="row">
           <div className="col">
             <label htmlFor="dtnascimento">Data de Nascimento</label>
-            <input
-              type="text"
+            <ReactInputDateMask
+              mask='dd/mm/yyyy'
               name="dtnascimento"
               className="form-control"
               value={dtnascimento}
+              showMaskOnFocus={true}
               onChange={(e) => { setDtnascimento(e.target.value) }}
             />
           </div>

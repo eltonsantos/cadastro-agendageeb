@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+<p align="center">
+  <img alt="Agenda GEEB" src=".github/logo.png" width="500px">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#-technologies">Technologies & dependences</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-next-steps">Next steps</a>
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+<h1 align="center">
+    <a href="https://agendageeb.vercel.app" target="_blank">
+      <img alt="Agenda GEEB" title="Agenda GEEB" src=".github/logo_branco.png" />
+    </a>
+</h1>
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🧪 Technologies & dependences
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This project was developed using the following technologies and dependences:
 
-### `yarn test`
+- [React](https://reactjs.org)
+- [Firebase](https://firebase.google.com/)
+- [React Hook Usecep](https://github.com/tawsbob/react-hook-useCep/)
+- [React Input Date Mask](https://github.com/elter1109/react-input-date-mask/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting started
 
-### `yarn build`
+Clone the project and access the folder
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+$ git clone https://github.com/eltonsantos/cadastro-agendageeb.git && cd cadastro-agendageeb
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow the steps below
+```bash
+# Install the dependencies
+$ yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Start the project
+$ yarn start
+```
 
-### `yarn eject`
+## 💻 Project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Cadastro de membros do Agenda GEEB. Sistema onde os membros do grupo Agenda GEEB poderão consultar as informações referentes aos membros.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔖 Layout
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You can view the project layout through the links below:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- AINDA NÃO DISPONÍVEL (Pensando em um layout bacana)
 
-## Learn More
+Remembering that you need to have a [Figma](http://figma.com/) account to access it.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🐾 Next steps
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [ ] Pensar em um visual bacana para o cadastro de membros do Agenda GEEB 💭
+- [ ] Definir qual framework de CSS utilizar 💅
+- [ ] Desenvolver uma tela de login para não permitir acesso ao sistema sem estar autenticado 🔒
+- [ ] Desenvolver a busca por nome do membro 🔎
+- [ ] Separar a página de cadastro da página de listagem de membros 📌
+- [ ] Criar página de detalhes com todas as informações dos membros 💾
+- [ ] Fazer upload de foto 📷
+- [ ] Corrigir o bug ao prencher o CEP 🐛
+- [ ] Corrigir o bug da máscarra na data de nascimento 🐛
+- [ ] Limpar campos do formulário ao cadastrar um membro 🧹
+- [ ] Fazer as validações dos campos ✅
+- [ ] E muito mais... 💜💪🏼
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 👨🏻‍💻 Author
 
-### Analyzing the Bundle Size
+<h3 align="center">
+  <img style="border-radius: 50%" src="https://avatars3.githubusercontent.com/u/1292594?s=460&u=0b1bfb0fc81256c59dc33f31ce344231bd5a5286&v=4" width="100px;" alt=""/>
+  <br/>
+  <strong>Elton Santos</strong> 🚀
+  <br/>
+  <br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ <a href="https://www.linkedin.com/in/eltonmelosantos" alt="LinkedIn" target="blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" />
+  </a>
 
-### Making a Progressive Web App
+  <a href="mailto:elton.melo.santos@gmail.com?subject=Olá%20Elton" alt="Email" target="blank">
+    <img src="https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:elton.melo.santos@gmail.com" />
+  </a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br/>
 
-### Advanced Configuration
+Made with ❤️ by Elton Santos 👋🏽 [Entre em contato!](https://www.linkedin.com/in/eltonmelosantos/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</h3>
