@@ -66,6 +66,7 @@ Remembering that you need to have a [Figma](http://figma.com/) account to access
 - [ ] Separar a página de cadastro da página de listagem de membros 📌
 - [ ] Criar página de detalhes com todas as informações dos membros 💾
 - [ ] Fazer upload de foto 📷
+- [ ] Colocar um alerta na página inicial mostrando se tem aniversariante do dia 📆
 - [ ] Corrigir o bug ao prencher o CEP 🐛
 - [ ] Corrigir o bug da máscarra na data de nascimento 🐛
 - [ ] Limpar campos do formulário ao cadastrar um membro 🧹
