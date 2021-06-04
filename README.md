@@ -10,8 +10,6 @@
   <a href="#-next-steps">Next steps</a>
 </p>
 
-<br>
-
 <h1 align="center">
     <a href="https://agendageeb.vercel.app" target="_blank">
       <img alt="Agenda GEEB" title="Agenda GEEB" src=".github/logo_branco.png" />
